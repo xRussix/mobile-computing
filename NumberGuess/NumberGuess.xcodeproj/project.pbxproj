@@ -10,9 +10,13 @@
 		36157250274672E200476818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3615724F274672E200476818 /* AppDelegate.swift */; };
 		36157252274672E200476818 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157251274672E200476818 /* SceneDelegate.swift */; };
 		36157254274672E200476818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36157253274672E200476818 /* ViewController.swift */; };
-		36157257274672E200476818 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36157255274672E200476818 /* Main.storyboard */; };
 		36157259274672E300476818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36157258274672E300476818 /* Assets.xcassets */; };
 		3615725C274672E300476818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3615725A274672E300476818 /* LaunchScreen.storyboard */; };
+		361572642746774F00476818 /* NumberGuessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361572632746774F00476818 /* NumberGuessModel.swift */; };
+		361572662746780E00476818 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361572652746780E00476818 /* Main.storyboard */; };
+		361572682746785900476818 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 361572672746785900476818 /* happy.png */; };
+		3615726A2746785D00476818 /* neutral.png in Resources */ = {isa = PBXBuildFile; fileRef = 361572692746785D00476818 /* neutral.png */; };
+		3615726C2746786300476818 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3615726B2746786300476818 /* sad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,14 @@
 		3615724F274672E200476818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36157251274672E200476818 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		36157253274672E200476818 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		36157256274672E200476818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36157258274672E300476818 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3615725B274672E300476818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3615725D274672E300476818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		361572632746774F00476818 /* NumberGuessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGuessModel.swift; sourceTree = "<group>"; };
+		361572652746780E00476818 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		361572672746785900476818 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
+		361572692746785D00476818 /* neutral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neutral.png; sourceTree = "<group>"; };
+		3615726B2746786300476818 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,14 @@
 				3615724F274672E200476818 /* AppDelegate.swift */,
 				36157251274672E200476818 /* SceneDelegate.swift */,
 				36157253274672E200476818 /* ViewController.swift */,
-				36157255274672E200476818 /* Main.storyboard */,
+				361572652746780E00476818 /* Main.storyboard */,
 				36157258274672E300476818 /* Assets.xcassets */,
 				3615725A274672E300476818 /* LaunchScreen.storyboard */,
 				3615725D274672E300476818 /* Info.plist */,
+				361572632746774F00476818 /* NumberGuessModel.swift */,
+				361572672746785900476818 /* happy.png */,
+				361572692746785D00476818 /* neutral.png */,
+				3615726B2746786300476818 /* sad.png */,
 			);
 			path = NumberGuess;
 			sourceTree = "<group>";
@@ -125,9 +137,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3615726C2746786300476818 /* sad.png in Resources */,
 				3615725C274672E300476818 /* LaunchScreen.storyboard in Resources */,
 				36157259274672E300476818 /* Assets.xcassets in Resources */,
-				36157257274672E200476818 /* Main.storyboard in Resources */,
+				3615726A2746785D00476818 /* neutral.png in Resources */,
+				361572682746785900476818 /* happy.png in Resources */,
+				361572662746780E00476818 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +155,7 @@
 			files = (
 				36157254274672E200476818 /* ViewController.swift in Sources */,
 				36157250274672E200476818 /* AppDelegate.swift in Sources */,
+				361572642746774F00476818 /* NumberGuessModel.swift in Sources */,
 				36157252274672E200476818 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		36157255274672E200476818 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				36157256274672E200476818 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3615725A274672E300476818 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
