@@ -4,6 +4,7 @@ class NumberGuessModel {
     
     var target = 0
     var guessCount = 0
+    var guesses = [Int]()
     
     func compare(to: Int) -> Int {
         return target - to
@@ -29,5 +30,9 @@ class NumberGuessModel {
             imgName = "sad"
         }
         return imgName
+    }
+    
+    func add(guess: Int) -> Void{
+        guesses.append(guess)
     }
 }
